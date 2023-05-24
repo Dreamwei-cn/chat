@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chat.chatopenai.mapper.SysPermissionMapper">
+
+    <resultMap id="BaseResultMap" type="com.chat.chatopenai.entity.SysPermission">
+            <id property="permissionid" column="permissionId" jdbcType="BIGINT"/>
+            <result property="action" column="action" jdbcType="VARCHAR"/>
+            <result property="actionName" column="action_name" jdbcType="VARCHAR"/>
+            <result property="actionClass" column="action_class" jdbcType="VARCHAR"/>
+            <result property="actionMethod" column="action_method" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        permissionId,action,action_name,
+        action_class,action_method
+    </sql>
+</mapper>
