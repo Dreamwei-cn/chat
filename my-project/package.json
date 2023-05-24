@@ -3,7 +3,7 @@
   "version": "3.0.4",
   "private": true,
   "scripts": {
-    "serve": "set NODE_OPTIONS=--openssl-legacy-provider && vue-cli-service serve",
+    "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --no-module",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
@@ -70,6 +70,7 @@
     "lint-staged": "^12.5.0",
     "postcss": "^8.3.5",
     "postcss-less": "^6.0.0",
+    "prettier": "^2.8.8",
     "regenerator-runtime": "^0.13.9",
     "stylelint": "^14.8.5",
     "stylelint-config-css-modules": "^4.1.0",
