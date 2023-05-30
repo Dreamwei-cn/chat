@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chat.auth.mapper.SysPermissionActionMapper">
+
+    <resultMap id="BaseResultMap" type="com.chat.auth.entity.SysPermissionAction">
+            <result property="id" column="id" jdbcType="BIGINT"/>
+            <result property="actionid" column="actionId" jdbcType="BIGINT"/>
+            <result property="permissionid" column="permissionId" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,actionId,permissionId
+    </sql>
+</mapper>

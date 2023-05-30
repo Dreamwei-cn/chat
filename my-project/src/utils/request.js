@@ -54,7 +54,16 @@ request.interceptors.request.use(config => {
 
 // response interceptor
 request.interceptors.response.use((response) => {
-  return response.data
+  var json = response.data
+  if (json.code === '0') {
+    return response.data
+  } else {
+    notification.error({
+      message: 'Error',
+      description: json.msg
+    })
+    return Promise.reject(json)
+  }
 }, errorHandler)
 
 const installer = {

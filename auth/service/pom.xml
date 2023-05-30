@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.chat</groupId>
+		<artifactId>chat-auth</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.chat</groupId>
+	<artifactId>chat-auth-service</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>chat-auth-service</name>
+	<description>Demo project for Spring Boot whit openai</description>
+	<properties>
+		<java.version>1.8</java.version>
+		<mybatis.version>2.3.0</mybatis.version>
+		<mybatis.plus.version>3.4.0</mybatis.plus.version>
+		<org.es.version>6.5.4</org.es.version>
+	</properties>
+	<dependencies>
+
+		<!-- Spring -->
+
+		<dependency>
+			<groupId>org.mybatis.spring.boot</groupId>
+			<artifactId>mybatis-spring-boot-starter</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.baomidou</groupId>
+			<artifactId>mybatis-plus-boot-starter</artifactId>
+			<version>${mybatis.plus.version}</version>
+		</dependency>
+
+
+
+
+
+		<!--        shiro  -->
+
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-spring</artifactId>
+			<version>1.5.3</version>
+		</dependency>
+
+		<!-- Shiro默认的缓存管理 -->
+
+		<!--		<dependency>-->
+		<!--			<groupId>org.apache.shiro</groupId>-->
+		<!--			<artifactId>shiro-spring-boot-starter</artifactId>-->
+		<!--			<version>1.5.3</version>-->
+		<!--		</dependency>-->
+		<dependency>
+			<groupId>org.apache.shiro</groupId>
+			<artifactId>shiro-ehcache</artifactId>
+			<version>1.5.3</version>
+		</dependency>
+
+
+		<!-- JWT -->
+		<dependency>
+			<groupId>com.auth0</groupId>
+			<artifactId>java-jwt</artifactId>
+			<version>3.3.0</version>
+		</dependency>
+
+		<!--  db -->
+
+<!--		<dependency>-->
+<!--			<groupId>org.postgresql</groupId>-->
+<!--			<artifactId>postgresql</artifactId>-->
+<!--			<scope>runtime</scope>-->
+<!--		</dependency>-->
+<!--		-->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.13</version>
+		</dependency>
+
+
+
+
+	</dependencies>
+
+
+</project>

@@ -1,0 +1,8 @@
+
+
+---
+spring:
+  elasticsearch:
+    uris: http://124.220.25.5:9200
+
+
